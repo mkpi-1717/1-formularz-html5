@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Zapis uczestników na szkoleni</title>
 </head>
 <body>
     <h1>Zapis uczestników na szkolenie</h1>
@@ -11,28 +11,28 @@
         <form action="https://formspree.io/mbjzvvpa" method="POST">
             
             <label for="name">Imię</label> <br>
-            <input type="text" name="name" placeholder="Tu wpisz Imię"> <br>
+            <input type="text" name="name" id="name" placeholder="Tu wpisz Imię"> <br>
             <label for="surname">Nazwisko</label> <br>
-            <input type="text" name="surname" placeholder="Tu wpisz Nazwisko"> <br>
+            <input type="text" name="surname" id="surname" placeholder="Tu wpisz Nazwisko"> <br>
             <label for="email">email</label> <br>
-            <input type="email" name="email" placeholder="Tu wpisz email"> <br>
+            <input type="email" name="email" id="email" placeholder="Tu wpisz email"> <br>
             <label for="phone">Telefon</label> <br>
-            <input type="tel" name="phone" placeholder="Tu wpisz numer telefonu"> <br>
+            <input type="tel" name="phone" id="phone" placeholder="Tu wpisz numer telefonu"> <br>
           
             <label for="city">Miasta</label> <br>
-            <select name="city">
+            <select name="city" id="city">
                 <option value="Kraków">Kraków</option>
                 <option value="Warszawa">Warszawa</option>
                 <option value="Gdańsk" selected>Gdańsk</option>
             </select><br>
 
-            <label for="choice">Płeć</label> <br>
-            <input type="radio" name="choice">Mężczyzna <br>
-            <input type="radio" name="choice">Kobieta <br>
-            <input type="radio" name="choice">Inne <br>
+            <p>Płeć</p>
+            <label><input type="radio" name="choice">Mężczyzna <br></label>
+            <label><input type="radio" name="choice">Kobieta <br></label>
+            <label><input type="radio" name="choice">Inne <br></label>
 
             <label for="agreement">Zgody</label> <br>
-            <input type="checkbox" name="agreement">Wyrażam zgodę <br>
+            <input type="checkbox" name="agreement" id="agreement">Wyrażam zgodę <br>
             
             <textarea name="massage" placeholder="Tu wpisz wiadomość"></textarea> <br ><br>
 
